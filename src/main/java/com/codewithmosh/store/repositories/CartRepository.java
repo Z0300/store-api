@@ -1,4 +1,4 @@
-package com.codewithmosh.store.controllers;
+package com.codewithmosh.store.repositories;
 
 import com.codewithmosh.store.entities.Cart;
 import org.springframework.data.jpa.repository.EntityGraph;
