@@ -1,5 +1,13 @@
+#spring:
+#  datasource:
+#    url: ${SPRING_DATASOURCE_URL}
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#websiteUrl: https//api.mystore.com
 spring:
   datasource:
-    url: ${SPRING_DATASOURCE_URL}
+    url: jdbc:mysql://${MYSQLHOST}:${MYSQLPORT}/${MYSQLDATABASE}?useSSL=false&serverTimezone=UTC
+    username: ${MYSQLUSER}
+    password: ${MYSQLPASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
-websiteUrl: https//api.mystore.com
+
+websiteUrl: https://api.mystore.com
